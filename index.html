@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Age calculator app</title>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <div class="main-container">
+    <form id="myForm">
+    <div class="inputs">
+      <div class="day">
+        <label for="day" id="dlabel">DAY</label><br>
+        <input type="text" id="day" placeholder="DD">
+        <p class="empty_msg1" id="empty_msg1">This field is required</p>
+        <p class="invalid_day" id="invalid_day">Must be a valid day</p>
+      </div>
+      <div class="month">
+        <label for="month" id="mlabel">MONTH</label><br>
+        <input type="text" id="month" placeholder="MM">
+        <p class="empty_msg2" id="empty_msg2">This field is required</p>
+        <p class="invalid_month" id="invalid_month">Must be a valid month</p>
+      </div>
+      <div class="year">
+        <label for="year" id="ylabel">YEAR</label><br>
+        <input type="text" id="year" placeholder="YYYY">
+        <p class="empty_msg3" id="empty_msg3">This field is required</p>
+        <p class="invalid_year" id="invalid_year">Must be in the past</p>
+      </div>
+    </div>
+    <div class="parent">
+      <hr id="line">
+      <div class="inner">
+        <button type="submit" id="submit"><img id="sub_btn"src="assets/images/icon-arrow.svg" alt="sub_img"></button>
+
+      </div>
+    </div>
+  </form>
+    <div class="results">
+      <h1><span id="res_years">- -</span>years</h1>
+      <h1><span id="res_months">- -</span>months</h1>
+      <h1><span id="res_days">- -</span>days</h1>
+    </div>
+  </div>
+</body>
+
+</html>
